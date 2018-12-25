@@ -1,0 +1,24 @@
+{
+  "Website": {
+    "name": "Gemini",
+    "address": "wss://api.gemini.com/v1/",
+    "protocol": "WebSocket"
+  },
+  "Action": [
+    {
+      "address": "marketdata"
+    }
+  ],
+  "Parameter": [
+    {
+      "name": "currency_pair",
+      "type": "String"
+    }
+  ],
+  "Specification": [
+    {
+      "action_address": "marketdata",
+      "parameter_name": "currency_pair"
+    }
+  ]
+}

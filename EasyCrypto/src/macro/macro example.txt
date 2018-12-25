@@ -1,0 +1,30 @@
+# Dream-like outline for the desired functioning of the parser
+# WARNING: dangerous amount of experimentality
+
+# check if ticker data is being fetched
+IF(NOT APP: running(Poloniex REST: returnTicker(currency_pair=BTC_BCN))){
+	# start fetching if not
+	Poloniex REST: returnTicker(currency_pair=BTC_BCN, interval=5);
+}
+
+# check if database possesses at least 10 ticker records
+IF(NOT APP: has(owner=Poloniex REST, currency_pair=BTC_BCN, smallest_amount=10)){
+
+	# if not wait 55 seconds and let the fetching service get required data
+	WAIT(55);
+
+}
+
+# repeat every 5 seconds
+EVERY(5){
+
+	# if 5 seconds-long moving average is greater than 10 seconds-long 
+	IF(APP: moving_average(owner=Poloniex REST, currency_pair=BTC_BCN, amount=5) > APP: moving_average(owner=Poloniex REST, currency_pair=BTC_BCN, amount=10)){
+		# then buy using all money
+		Poloniex REST: buy_market(currency_pair=BTC_BCN, amount=-1);
+	}ELSE{
+		# if not then sell using all money
+		Poloniex REST: sell_market(currency_pair=BTC_BCN, amount=-1);
+	}
+}
+

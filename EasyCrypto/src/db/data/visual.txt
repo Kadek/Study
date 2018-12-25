@@ -1,0 +1,31 @@
+{
+  "Website": {
+    "name": "Visualization",
+    "address": "",
+    "protocol": ""
+  },
+  "Action": [
+    {
+      "address": "show ticker"
+    },
+    {
+      "address": "show ticker candlesticks"
+    }
+  ],
+  "Parameter": [
+    {
+      "name": "currency_pair",
+      "type": "String"
+    }
+  ],
+  "Specification": [
+    {
+      "action_address": "show ticker",
+      "parameter_name": "currency_pair"
+    },
+    {
+      "action_address": "show ticker candlesticks",
+      "parameter_name": "currency_pair"
+    }
+  ]
+}

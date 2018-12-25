@@ -1,0 +1,15 @@
+{
+  "Website": {
+    "name": "Bittrex",
+    "address": "https://bittrex.com/api/v1.1/",
+    "protocol": "REST"
+  },
+  "Action": [
+    {
+      "address": "public/getmarkets"
+    },
+    {
+      "address": "public/getcurrencies"
+    }
+  ]
+}

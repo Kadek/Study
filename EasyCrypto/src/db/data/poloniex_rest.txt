@@ -1,0 +1,32 @@
+{
+  "Website": {
+    "name": "Poloniex",
+    "address": "https://poloniex.com/public?command=",
+    "protocol": "REST"
+  },
+  "Action": [
+    {
+      "address": "returnTicker"
+    }
+  ],
+  "Parameter": [
+    {
+      "name": "currency_pair",
+      "type": "String"
+    },
+    {
+      "name": "interval",
+      "type": "Integer"
+    }
+  ],
+  "Specification": [
+    {
+      "action_address": "returnTicker",
+      "parameter_name": "currency_pair"
+    },
+    {
+      "action_address": "returnTicker",
+      "parameter_name": "interval"
+    }
+  ]
+}
