@@ -1,0 +1,4 @@
+- nie jestem pewien czy atrybutem decyzyjnym nie powinia byc kombinacja Type.1+Type.2 
+dopiero wtedy to jest jednoznaczne. Problem jest w tym, że mamy 18*19 klas wtedy
+
+- jak któraś zmienna wymaga obróbki to możesz mi dać znać i to dopiszę
