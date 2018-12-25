@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>
+		<meta https-equiv="content-type" content="text/html;" charset="UTF-8">
+		<link rel="stylesheet" href="/static/css/szablon1.css">
+		<title> Bezpieczna Strona </title>
+	</head>
+
+	<body>
+		<h2>Oto Twoje bezpieczne konto!</h2>
+		<h3>Twoje dane są u nas bezpieczne</h3>
+		<p id="login"> {{ login }}  </p>
+		<a href="/publicFiles"> Sprawdź publiczne kody! </a>
+		<p> Załaduj prywatny plik na serwer </p>
+		<form action="/uploadPrivateFile" method="post" enctype="multipart/form-data">
+			<input type="file" name="privateFile">
+			<input type="submit" value="Załaduj">
+		</form>
+		<a href="/logout"> Wyloguj się </a>
+		<a href="/changePassword"> Zmień hasło </a>
+		
+		{% for file in files %}
+			<p id="p_{{ file }}">
+				<a href="/downloadPrivateFile?file={{ file }}"> {{ file|e }} </a>
+				<a href="#" onclick="removePrivateFile(this)"> Usuń </a>
+			</p>
+		{% endfor %}
+	
+		<script src="/static/js/user.js"></script>	
+	</body>
+</html>
+

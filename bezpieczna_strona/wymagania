@@ -1,0 +1,24 @@
+
+Python:
+	logi: - completed
+    		weryfikacja liczby nieudanych prób logowania, - completed
+    		dodanie opóźnienia przy weryfikacji hasła w celu wydłużenia ataków zdalnych, - completed	
+		informowanie użytkownika o nowych podłączeniach do jego konta. - completed
+
+	haslo: - completed
+    		wielokrotne wykorzystanie funkcji hash, żeby wydłużyć ataki brute-force na hash, - completed
+    		możliwość odzyskania dostępu w przypadku utraty hasła, - completed
+    		dodaj użytkownikowi możliwość zmiany hasła, - completed
+    		(niezbędne) restrykcyjna weryfikacje danych pochodzących z formularza login-hasło, - completed
+    		(niezbędne) przechowywanie hasła chronione funkcją hash i solą, - completed
+		sprawdzanie jakości hasła (jego entropii), - completed
+	
+	pliki: - completed
+		(niezbędne) możliwość przesłania na serwer prywatnych plików o dowolnym rozszerzeniu, - completed
+		(niezbędne) możliwość przesłania na serwer publicznych fragmentów kodu i wyświetlenie go, - completed
+
+    dodatkowa kontrola spójności sesji (przeciw atakom XSRF),
+
+Apache:
+    (niezbędne) zabezpieczenie transmisji poprzez wykorzystanie protokołu https. - completed
+

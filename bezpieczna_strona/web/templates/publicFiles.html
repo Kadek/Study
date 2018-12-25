@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>
+		<meta https-equiv="content-type" content="text/html;" charset="UTF-8">
+		<link rel="stylesheet" href="/static/css/szablon1.css">
+		<title> Bezpieczna Strona </title>
+	</head>
+
+	<body>
+		<h2>Jakie fajne publiczne kody!</h2>
+		<h3>Twoje dane są u nas bezpieczne</h3>
+	
+		<p><a href="/"> Powrót do strony głównej </a>
+		{% if login is defined %}
+			<p> Załaduj publiczny plik na serwer </p>
+			<form action="/uploadPublicFile" method="post" enctype="multipart/form-data">
+				<input type="file" name="publicFile">
+				<input type="submit" value="Załaduj">
+			</form>
+			<a href="/logout"> Wyloguj się </a>
+		{% else %}
+			<p><a href="/"> Zaloguj się żeby dodawać pliki </a></p>
+		{% endif %}
+		
+		{% for user, file in files %}
+			<p id="p_{{ file }}">
+				<span> {{ user|e }}: </span>
+				<a href="/showPublicFile?login={{ user }}&file={{ file }}"> {{ file|e }} </a>
+				{% if user == login %}
+					<a href="#" onclick="removePublicFile(this)"> Usuń </a>
+				{% endif %}
+			</p>
+		{% endfor %}
+		
+		<script src="/static/js/publicFiles.js"></script>	
+	</body>
+</html>
+

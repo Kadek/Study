@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>
+		<meta https-equiv="content-type" content="text/html;" charset="UTF-8">
+		<link rel="stylesheet" href="/static/css/szablon1.css">
+		<title> Bezpieczna Strona </title>
+	</head>
+
+	<body>
+		<h2>Rejestracja prosta jak nigdy dotąd!</h2>
+		<h3>Twoje dane są u nas bezpieczne</h3>
+		<form id="formularz" action="/registerSuccesful" method="post" onSubmit="return submitForm();">
+			<p> Login </p>
+			<input type="text" id="login" name="login"></br>
+
+			<p> Hasło </p>
+			<input type="text" id="password" name="password" oninput="measureStrength();comparePasswords()">
+			<span id="passwordInfo"> </span></br>
+
+			<p> Powtórz hasło </p>
+			<input type="text"  id="passwordAgain" oninput="comparePasswords()">
+			<span id="passwordAgainInfo"> </span></br>
+	
+			<p> Email do odzyskania hasła </p>
+			<input type="text" id="mail" name="mail"></br>
+
+			<input type="submit" value="Zarejestruj">
+			<span id="submitInfo"> </span></br>
+		</form>
+		<script src="/static/js/register.js"></script>
+	</body>
+<html>
+
