@@ -1,0 +1,10 @@
+width: 200
+height: 100
+start x: 6
+start y: 97
+traps:
+  - x: 7
+    y: 97
+  - x: 8
+    y: 97
+
