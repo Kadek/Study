@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "name": "kwiaciarnia",
+      "time_required": 120,
+      "time_open": 360,
+      "time_close": 1140
+    },
+    {
+      "name": "sklep spozywczy",
+      "time_required": 10,
+      "time_open": 420,
+      "time_close": 1080     
+    },
+	{
+      "name": "dom",
+      "time_required": 0,
+      "time_open": 0,
+      "time_close": 0   
+    },
+	{
+      "name": "supermarket",
+      "time_required": 30,
+      "time_open": 420,
+      "time_close": 1080     
+    },
+	{
+      "name": "kino",
+      "time_required": 240,
+      "time_open": 0,
+      "time_close": 0   
+    },	
+	{
+      "name": "przystanek",
+      "time_required": 7,
+      "time_open": 420,
+      "time_close": 1080     
+    },
+	{
+      "name": "bar",
+      "time_required": 20,
+      "time_open": 0,
+      "time_close": 0   
+    },	
+	{
+      "name": "restauracja",
+      "time_required": 40,
+      "time_open": 0,
+      "time_close": 0   
+    },	
+    {
+      "name": "szkola",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "studia",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "ratusz",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "stare miasto",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "łazienki",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "działka",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "market",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "pomnik",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "góry",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "park",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+	{
+      "name": "las",
+      "time_required": 300,
+      "time_open": 480,
+      "time_close": 960
+    },
+    {
+      "name": "muzeum",
+      "time_required": 240,
+      "time_open": 600,
+      "time_close": 840
+    }
+  ],
+  "connections": [
+    {
+      "name": "ulica 15 minut",
+      "time_required": 15,
+      "time_open": 0,
+      "time_close": 1440
+    },
+    {
+      "name": "ulica 7 minut",
+      "time_required": 7,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "pieszo 30 minut",
+      "time_required": 30,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "pieszo 43 minuty",
+      "time_required": 43,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "pieszo 35 minut",
+      "time_required": 35,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "ulica 23 minuty",
+      "time_required": 23,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "ulica 4 minuty",
+      "time_required": 4,
+      "time_open": 0,
+      "time_close": 1440
+    },
+	{
+      "name": "ulica 18 minut",
+      "time_required": 18,
+      "time_open": 0,
+      "time_close": 1440
+    },
+    {
+      "name": "metro 10 minut",
+      "time_required": 10,
+      "time_open": 240,
+      "time_close": 1380
+    }
+  ]
+}

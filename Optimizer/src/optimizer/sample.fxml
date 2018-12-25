@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.*?>
+
+<BorderPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480" prefWidth="640" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="optimizer.gui.View">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="outputArea" prefHeight="200.0" prefWidth="400.0">
+               <HBox.margin>
+                  <Insets left="280.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Krok" wrapText="true">
+               <HBox.margin>
+                  <Insets left="233.0" top="10.0" />
+               </HBox.margin>
+            </Button> 
+            <Button fx:id="saveMapButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Zapisz mapę" wrapText="true">
+               <HBox.margin>
+                  <Insets left="233.0" top="10.0" />
+               </HBox.margin>
+            </Button> 
+            <Button fx:id="loadMapButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="Wczytaj mapę" wrapText="true">
+               <HBox.margin>
+                  <Insets left="233.0" top="10.0" />
+               </HBox.margin>
+            </Button>         
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="628.0" prefWidth="233.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="nodesTable">
+              <columns>
+                <TableColumn fx:id="nodesColumn" prefWidth="247.0" text="Węzły" />
+              </columns>
+            </TableView>
+            <TableView fx:id="connectionsTable">
+              <columns>
+                <TableColumn fx:id="connectionsColumn" prefWidth="248.0" text="Połączenia" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox fillWidth="false" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="allTasksTable" prefHeight="407.0" prefWidth="290.0">
+              <columns>
+                <TableColumn fx:id="allTasksColumn" prefWidth="289.0" text="Możliwe zadania" />
+              </columns>
+            </TableView>
+            <TableView fx:id="selectedTasksTable" prefHeight="408.0" prefWidth="290.0">
+              <columns>
+                <TableColumn fx:id="selectedTasksColumn" prefWidth="289.0" text="Wybrane zadania" />
+              </columns>
+            </TableView>
+            
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <ScrollPane fx:id="imageMap" prefHeight="${imageMap.parent.height}" prefWidth="${imageMap.parent.width}" BorderPane.alignment="CENTER">
+        <content>
+            <Canvas fx:id="map" height="${map.parent.height}" width="${map.parent.width}" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
