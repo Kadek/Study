@@ -1,0 +1,11 @@
+Dane:
+A = T
+B = T
+Wzory:
+(A||B) => C
+(A||C) => D
+(A||D) => E
+(A||F) => E
+(A||B) => F
+Szukane:
+E = T

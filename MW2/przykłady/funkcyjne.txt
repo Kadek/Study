@@ -1,0 +1,11 @@
+Dane:
+A = T
+B[C][D] = T
+Wzory:
+(A||B[C][D]) => C
+(A||C) => D
+(A||D) => E
+(A||F) => E
+(A||B[C][D]) => F
+Szukane:
+E = T
