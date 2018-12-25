@@ -1,0 +1,32 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+a {
+	margin-top: 2em;
+	color: black;
+}
+
+.h-100 {
+	height: 26em;
+}
+
+p {
+	overflow-y: auto;
+	max-height: 20em;
+}
+
+.list-group {
+	overflow-y: auto;
+	max-height: 15em;
+}
+
+input {
+	margin-top: 2em;
+}

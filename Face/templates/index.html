@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Face</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{'bootstrap/css/bootstrap.min.css'|staticfile}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{'css/index.css'|staticfile}}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-lg-4 portfolio-item">
+          <div class="card h-100">
+            <div class="card-body">
+	          	<div class="form-group">
+                <form action="Menu.process" id="menu_form" data-bind="true">
+    			        <label for="login">Login:</label>
+    			        <input type="text" class="form-control" id="menu_input" name="user">
+                </form>
+				      </div>
+
+              <a href="Menu.login" id="login_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Zaloguj się</a>
+      				<a href="Menu.register" id="register_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Zarejestruj się</a>
+              <div class="checkbox">
+                <label><input type="checkbox" value="" onclick="Menu.debug()">Tryb debug</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+    </div>
+
+    <script src="{{'bootstrap/js/bootstrap.bundle.min.js'|staticfile}}"></script>
+    <script src="{{'js/jquery-3.3.1.js'|staticfile}}"></script>
+
+  </body>
+
+</html>

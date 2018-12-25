@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Face</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{'bootstrap/css/bootstrap.min.css'|staticfile}}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{'css/manager.css'|staticfile}}" rel="stylesheet">
+
+  </head>
+
+  <body id="{{user}}">
+
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-body">
+	          	<ul id="notes" class="list-group">
+      				</ul>
+
+              <input type="text" class="form-control" id="new_note" placeholder="Nazwa nowej notatki">
+            	<a href="Manager.add" id="add_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Dodaj</a>
+        			<a href="Manager.remove" id="remove_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Usuń</a>
+        			<a href="Manager.logout" id="logout_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Wyloguj się</a>
+            </div>
+          </div>
+        </div>
+        
+   		<div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-body">
+            	<h1 id="note_header"></h1>
+            	<textarea class="form-control" id="note_text" maxlength="500"></textarea>
+              <a href="Manager.save" id="save_button" class="btn btn-primary btn-lg active" role="button" data-bind="true">Zapisz</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="{{'bootstrap/js/bootstrap.bundle.min.js'|staticfile}}"></script>
+    <script src="{{'js/jquery-3.3.1.js'|staticfile}}"></script>
+
+  </body>
+
+</html>
